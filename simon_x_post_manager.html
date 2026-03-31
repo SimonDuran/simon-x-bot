@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>@simonduranalv — post manager</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0a0a0a;color:#e8e8e8;min-height:100vh;padding:2rem 1rem}
+.wrap{max-width:700px;margin:0 auto}
+.hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.25rem;flex-wrap:wrap;gap:8px}
+.hdr h1{font-size:17px;font-weight:500;color:#e8e8e8}
+.hdr p{font-size:12px;color:#555;margin-top:3px}
+.btn{font-size:12px;padding:7px 13px;border-radius:8px;border:1px solid #2a2a2a;background:transparent;color:#e8e8e8;cursor:pointer;transition:all 0.12s}
+.btn:hover{background:#1a1a1a;border-color:#3a3a3a}
+.btn-primary{background:#e8e8e8;color:#0a0a0a;border-color:#e8e8e8;font-weight:500}
+.btn-primary:hover{background:#ccc;border-color:#ccc}
+.btn-green{color:#4ade80;border-color:#1a3a2a}.btn-green:hover{background:#0d2a1a}
+.btn-red{color:#f87171;border-color:#3a1a1a}.btn-red:hover{background:#2a0d0d}
+.btn-blue{color:#93c5fd;border-color:#1a2a3a}.btn-blue:hover{background:#0d1a2a}
+.paste-area{border:1px dashed #2a2a2a;border-radius:12px;padding:1.5rem;margin-bottom:1rem;text-align:center}
+.paste-area p{font-size:13px;color:#666;margin-bottom:10px;line-height:1.6}
+.paste-area code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-family:monospace;font-size:12px;color:#aaa}
+.paste-area textarea{width:100%;height:80px;font-size:12px;font-family:monospace;background:#111;border:1px solid #222;border-radius:8px;padding:8px;color:#ccc;resize:none;outline:none;margin-top:10px}
+.paste-area textarea:focus{border-color:#444}
+.bulk{display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap}
+.tabs{display:flex;gap:4px;margin-bottom:12px;flex-wrap:wrap}
+.tab{font-size:12px;padding:4px 11px;border-radius:20px;border:1px solid #2a2a2a;background:transparent;color:#555;cursor:pointer;transition:all 0.12s}
+.tab.on{background:#e8e8e8;color:#0a0a0a;border-color:#e8e8e8}
+.posts{display:flex;flex-direction:column;gap:8px}
+.card{background:#111;border:1px solid #1e1e1e;border-radius:12px;padding:1rem;transition:border-color 0.12s}
+.card.approved{border-left:3px solid #4ade80}
+.card.rejected{opacity:0.35}
+.meta{display:flex;align-items:center;gap:7px;margin-bottom:9px}
+.num{font-size:11px;color:#444;min-width:20px;font-weight:500}
+.tbadge{font-size:11px;padding:2px 8px;border-radius:20px;font-weight:500}
+.t-reflection{background:#1a1a3a;color:#93c5fd}
+.t-list{background:#1e1a3a;color:#c4b5fd}
+.t-question{background:#0d2a1a;color:#4ade80}
+.t-free{background:#1e1e1e;color:#666}
+.sbadge{margin-left:auto;font-size:11px;font-weight:500}
+.s-approved{color:#4ade80}.s-rejected{color:#f87171}.s-pending{color:#333}
+.content{font-size:13px;line-height:1.65;color:#bbb;margin-bottom:10px;white-space:pre-wrap}
+.ta{width:100%;font-size:13px;line-height:1.65;color:#ccc;background:#0a0a0a;border:1px solid #2a2a2a;border-radius:8px;padding:9px;resize:vertical;min-height:72px;font-family:inherit;margin-bottom:10px;outline:none}
+.ta:focus{border-color:#444}
+.actions{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.cc{font-size:11px;color:#333;margin-left:auto}
+.cc.over{color:#f87171}
+.empty{text-align:center;padding:2.5rem;color:#333;font-size:13px;border:1px dashed #1e1e1e;border-radius:12px}
+.export{margin-top:1.25rem;padding:1rem;background:#111;border-radius:12px;border:1px solid #1e1e1e}
+.export h3{font-size:13px;font-weight:500;margin-bottom:6px;color:#e8e8e8}
+.export p{font-size:12px;color:#555;margin-bottom:8px;line-height:1.5}
+.export code{background:#1a1a1a;padding:2px 5px;border-radius:4px;font-family:monospace;font-size:11px;color:#888}
+.excode{font-family:monospace;font-size:11px;background:#0a0a0a;border:1px solid #1e1e1e;border-radius:8px;padding:9px;white-space:pre-wrap;word-break:break-all;max-height:160px;overflow-y:auto;color:#666}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hdr">
+    <div>
+      <h1>@simonduranalv — post manager</h1>
+      <p id="stats">Paste this week's posts to get started</p>
+    </div>
+  </div>
+
+  <div class="paste-area" id="paste-area">
+    <p>Ask Claude <code>"genera los posts de esta semana"</code><br>Copy the JSON → paste below → Load posts</p>
+    <textarea id="paste-input" placeholder='[{"id":1,"type":"reflection","content":"..."}]'></textarea>
+    <br><br>
+    <button class="btn btn-primary" onclick="loadPosts()">Load posts</button>
+  </div>
+
+  <div id="main" style="display:none">
+    <div class="bulk">
+      <button class="btn btn-green" onclick="approveAll()">Approve all</button>
+      <button class="btn btn-red" onclick="rejectAll()">Reject all</button>
+      <button class="btn" onclick="resetAll()">Reset</button>
+      <button class="btn" onclick="showPaste()">Load new week</button>
+    </div>
+    <div class="tabs">
+      <button class="tab on" onclick="setFilter('all',this)">All <span id="ca">0</span></button>
+      <button class="tab" onclick="setFilter('pending',this)">Pending <span id="cp">0</span></button>
+      <button class="tab" onclick="setFilter('approved',this)">Approved <span id="capp">0</span></button>
+      <button class="tab" onclick="setFilter('rejected',this)">Rejected <span id="cr">0</span></button>
+    </div>
+    <div class="posts" id="posts"></div>
+    <div id="export" style="display:none" class="export">
+      <h3>Export to posts.json</h3>
+      <p>Copy → paste into <code>posts.json</code> → <code>git add . && git commit -m "week posts" && git push</code></p>
+      <div class="excode" id="excode"></div>
+      <br>
+      <button class="btn btn-primary" style="margin-top:8px" onclick="copyJSON()">Copy JSON</button>
+    </div>
+  </div>
+</div>
+
+<script>
+let posts=[],filter='all',editing=null;
+
+function loadPosts(){
+  const raw=document.getElementById('paste-input').value.trim();
+  try{
+    const match=raw.match(/\[[\s\S]*\]/);
+    if(!match)throw new Error();
+    const data=JSON.parse(match[0]);
+    if(!Array.isArray(data)||!data[0]?.content)throw new Error();
+    posts=data.map(p=>({...p,status:p.status||'pending'}));
+    document.getElementById('paste-area').style.display='none';
+    document.getElementById('main').style.display='block';
+    render();
+  }catch(e){alert('Could not read posts. Make sure you copied the full JSON array.');}
+}
+
+function showPaste(){
+  document.getElementById('paste-area').style.display='block';
+  document.getElementById('main').style.display='none';
+}
+
+function setFilter(f,el){
+  filter=f;
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));
+  el.classList.add('on');
+  render();
+}
+
+function counts(){
+  const app=posts.filter(p=>p.status==='approved').length;
+  const rej=posts.filter(p=>p.status==='rejected').length;
+  const pen=posts.filter(p=>p.status==='pending').length;
+  document.getElementById('stats').textContent=`${app} approved · ${pen} pending · ${rej} rejected`;
+  document.getElementById('ca').textContent=posts.length;
+  document.getElementById('cp').textContent=pen;
+  document.getElementById('capp').textContent=app;
+  document.getElementById('cr').textContent=rej;
+  const approved=posts.filter(p=>p.status==='approved');
+  const exp=document.getElementById('export');
+  if(approved.length>0){
+    exp.style.display='block';
+    document.getElementById('excode').textContent=JSON.stringify(
+      approved.map(p=>({id:p.id,type:p.type,content:p.content,published:false})),null,2
+    );
+  }else{exp.style.display='none';}
+}
+
+function render(){
+  const el=document.getElementById('posts');
+  const list=filter==='all'?posts:posts.filter(p=>p.status===filter);
+  if(!list.length){el.innerHTML=`<div class="empty">No ${filter==='all'?'':filter+' '}posts.</div>`;counts();return;}
+  el.innerHTML=list.map(p=>{
+    const over=p.content.length>280;
+    const isEd=editing===p.id;
+    const sb=p.status==='approved'?`<span class="sbadge s-approved">approved</span>`:
+      p.status==='rejected'?`<span class="sbadge s-rejected">rejected</span>`:
+      `<span class="sbadge s-pending">—</span>`;
+    return `<div class="card ${p.status}" id="c${p.id}">
+      <div class="meta">
+        <span class="num">#${p.id}</span>
+        <span class="tbadge t-${p.type}">${p.type}</span>
+        ${sb}
+      </div>
+      ${isEd
+        ?`<textarea class="ta" id="ed${p.id}" oninput="lcc(${p.id},this.value)">${p.content}</textarea>`
+        :`<div class="content">${p.content}</div>`}
+      <div class="actions">
+        ${p.status!=='approved'?`<button class="btn btn-green" onclick="ss(${p.id},'approved')">Approve</button>`:''}
+        ${p.status!=='rejected'?`<button class="btn btn-red" onclick="ss(${p.id},'rejected')">Reject</button>`:''}
+        ${p.status!=='pending'?`<button class="btn" onclick="ss(${p.id},'pending')">Undo</button>`:''}
+        ${isEd
+          ?`<button class="btn btn-primary" onclick="save(${p.id})">Save</button><button class="btn" onclick="cancel()">Cancel</button>`
+          :`<button class="btn btn-blue" onclick="edit(${p.id})">Edit</button>`}
+        <span class="cc ${over?'over':''}" id="cc${p.id}">${p.content.length}/280</span>
+      </div>
+    </div>`;
+  }).join('');
+  counts();
+}
+
+function ss(id,s){const p=posts.find(p=>p.id===id);if(p){p.status=s;render();}}
+function edit(id){editing=id;render();setTimeout(()=>{const e=document.getElementById(`ed${id}`);if(e)e.focus();},30);}
+function save(id){const e=document.getElementById(`ed${id}`);if(e){const p=posts.find(p=>p.id===id);if(p)p.content=e.value;}editing=null;render();}
+function cancel(){editing=null;render();}
+function lcc(id,v){const e=document.getElementById(`cc${id}`);if(e){e.textContent=`${v.length}/280`;e.className=`cc${v.length>280?' over':''}`;}}
+function approveAll(){posts.forEach(p=>p.status='approved');render();}
+function rejectAll(){posts.forEach(p=>p.status='rejected');render();}
+function resetAll(){posts.forEach(p=>p.status='pending');render();}
+function copyJSON(){
+  navigator.clipboard.writeText(document.getElementById('excode').textContent).then(()=>{
+    const b=event.target;const orig=b.textContent;b.textContent='Copied!';setTimeout(()=>b.textContent=orig,2000);
+  });
+}
+</script>
+</body>
+</html>
