@@ -38,17 +38,7 @@ def mark_as_published(post_id):
         json.dump(posts, f, indent=2)
 
 def should_post_now():
-    est = pytz.timezone("America/New_York")
-    now = datetime.now(est)
-    hour = now.hour
-    
-    # Solo postear entre 9am y 7pm EST
-    if hour < 9 or hour >= 19:
-        return False
-    
-    # Horas válidas con 2 horas de diferencia: 9, 11, 13, 15, 17, 19
-    valid_hours = [9, 11, 13, 15, 17]
-    return hour in valid_hours
+    return True
 
 def main():
     if not should_post_now():
