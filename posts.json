@@ -1,74 +1,122 @@
 [
   {
+    "id": 1,
+    "type": "reflection",
+    "content": "you can train until your hair falls out chasing a dream. but if you don't know why you're chasing it, reaching it will feel like nothing.",
+    "published": false
+  },
+  {
     "id": 2,
     "type": "reflection",
-    "content": "Solitude is not loneliness. One drains you, the other builds you. Learn the difference early.",
+    "content": "Smile on the days you're most afraid. Not to pretend everything's fine. But to remind yourself — and everyone watching — that you haven't given up.",
+    "published": false
+  },
+  {
+    "id": 3,
+    "type": "reflection",
+    "content": "the strongest person in the room isn't the one ready to fight. it's the one who doesn't need to.",
     "published": false
   },
   {
     "id": 4,
-    "type": "question",
-    "content": "What's something you had to unlearn to actually grow?",
+    "type": "reflection",
+    "content": "Nobody remembers what you did when it was easy. They remember what you did when you had nothing left.",
     "published": false
   },
   {
     "id": 5,
     "type": "reflection",
-    "content": "most people quit right before the part where it starts to make sense.",
+    "content": "do the work when nobody's watching. do it when you're tired. do it when there's no reward. that's the only version of discipline that actually sticks.",
     "published": false
   },
   {
     "id": 6,
     "type": "reflection",
-    "content": "Freedom isn't the absence of responsibility. It's having chosen your responsibilities yourself.",
+    "content": "The people you remember most are the ones who were quietly consistent. Not the ones who were loud for a season.",
+    "published": false
+  },
+  {
+    "id": 7,
+    "type": "reflection",
+    "content": "your feelings are not a weakness. the person who can feel deeply and still move forward is stronger than anyone who simply doesn't care.",
+    "published": false
+  },
+  {
+    "id": 8,
+    "type": "reflection",
+    "content": "Dreams cost more than people tell you. The price isn't money or time — it's the version of yourself you have to become to reach them.",
+    "published": false
+  },
+  {
+    "id": 9,
+    "type": "reflection",
+    "content": "know yourself better than anyone else does. that's the only unfair advantage that can't be taken from you.",
     "published": false
   },
   {
     "id": 10,
-    "type": "question",
-    "content": "What's the best financial decision you've made under 25?",
+    "type": "list",
+    "content": "BE BORING 2026:\n\n- 100 push-ups\n- 100 sit-ups\n- 100 squats\n- 10km run\n- every single day\n\nnobody said the formula had to be complicated.",
     "published": false
   },
   {
     "id": 11,
-    "type": "reflection",
-    "content": "There's a version of you that stopped making excuses. That version isn't special. Just consistent.",
+    "type": "list",
+    "content": "BE BORING 2026:\n\n- sleep before midnight\n- read before you scroll\n- say what you mean\n- do the thing you've been avoiding\n- don't explain yourself to the wrong people",
     "published": false
   },
   {
     "id": 12,
-    "type": "free",
-    "content": "some days the goal isn't to win. it's just to not fall behind yourself.",
+    "type": "list",
+    "content": "BE BORING 2026:\n\n- track your spending every week\n- invest before you spend on wants\n- learn one thing before bed\n- keep the promises you make to yourself\n- show up even when no one's clapping",
+    "published": false
+  },
+  {
+    "id": 13,
+    "type": "question",
+    "content": "what's one thing you gave up on that you still think about?",
     "published": false
   },
   {
     "id": 14,
-    "type": "reflection",
-    "content": "the gap between who you are and who you want to be is just habits you haven't built yet.",
+    "type": "question",
+    "content": "what's a goal you finally reached that felt emptier than you expected?",
+    "published": false
+  },
+  {
+    "id": 15,
+    "type": "question",
+    "content": "What's the most useful thing someone taught you without meaning to?",
     "published": false
   },
   {
     "id": 16,
-    "type": "reflection",
-    "content": "Chasing a dream you don't fully understand yet is still better than standing still waiting for clarity.",
+    "type": "question",
+    "content": "what does freedom actually mean to you in real life?",
     "published": false
   },
   {
     "id": 17,
     "type": "question",
-    "content": "What's a skill you picked up out of boredom that actually became useful?",
+    "content": "If you could go back and tell your younger self one thing about money, what would it be?",
     "published": false
   },
   {
     "id": 18,
-    "type": "reflection",
-    "content": "you don't need more motivation. you need a version of the plan that works on the days you have nothing left.",
+    "type": "question",
+    "content": "what's one habit that changed your life but sounds boring when you describe it?",
     "published": false
   },
   {
     "id": 19,
     "type": "free",
-    "content": "the older i get the more i realize happiness isn't a destination. it's what happens when you stop postponing your own life.",
+    "content": "some days the goal is simple. just don't become the person you said you wouldn't be.",
+    "published": false
+  },
+  {
+    "id": 20,
+    "type": "free",
+    "content": "the routine is not the enemy of greatness. it's how greatness quietly happens.",
     "published": false
   }
 ]
