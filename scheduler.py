@@ -55,7 +55,7 @@ def main():
         print("Not posting this run (random skip).")
         return
 
-    post = pending[0]
+    post = random.choice(pending)
 
     try:
         client.create_tweet(text=post["content"])
