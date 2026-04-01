@@ -249,7 +249,8 @@
     "id": 40,
     "lang": "en",
     "content": "i want to travel to japan, china, and about 40 other places before i'm 30. the plan is being built daily.",
-    "published": false
+    "published": true,
+    "published_date": "2026-04-01"
   },
   {
     "id": 41,
