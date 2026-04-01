@@ -235,7 +235,8 @@
     "id": 38,
     "lang": "en",
     "content": "i do most of my serious work between claude, gemini and perplexity. each one has a different brain. knowing when to use which one is honestly underrated as a skill.",
-    "published": false
+    "published": true,
+    "published_date": "2026-04-01"
   },
   {
     "id": 39,
