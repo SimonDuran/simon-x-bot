@@ -2,11 +2,7 @@ name: Post to X
 
 on:
   schedule:
-    - cron: '0 14 * * *'  # 9am EST
-    - cron: '0 16 * * *'  # 11am EST
-    - cron: '0 18 * * *'  # 1pm EST
-    - cron: '0 20 * * *'  # 3pm EST
-    - cron: '0 22 * * *'  # 5pm EST
+    - cron: '0 * * * *'
   workflow_dispatch:
 
 jobs:

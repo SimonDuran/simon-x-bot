@@ -2,7 +2,7 @@ import tweepy
 import json
 import os
 import random
-from datetime import datetime
+from datetime import datetime, date
 import pytz
 from dotenv import load_dotenv
 
@@ -16,50 +16,55 @@ def get_client():
         access_token_secret=os.getenv("ACCESS_TOKEN_SECRET")
     )
 
-def get_posts_to_publish():
+def load_posts():
     with open("posts.json", "r") as f:
-        posts = json.load(f)
-    return [p for p in posts if not p.get("published", False)]
+        return json.load(f)
 
-def publish_post(client, post):
-    response = client.create_tweet(text=post["content"])
-    return response
-
-def mark_as_published(post_id):
-    with open("posts.json", "r") as f:
-        posts = json.load(f)
-    
-    for post in posts:
-        if post["id"] == post_id:
-            post["published"] = True
-            break
-    
+def save_posts(posts):
     with open("posts.json", "w") as f:
         json.dump(posts, f, indent=2)
 
-def should_post_now():
-    return True
+def get_todays_published_count(posts):
+    today = date.today().isoformat()
+    return sum(1 for p in posts if p.get("published_date") == today)
+
+def should_post_today(posts):
+    daily_target = random.randint(3, 7)
+    published_today = get_todays_published_count(posts)
+    return published_today < daily_target
+
+def roll_post_chance():
+    # ~30% chance each time the workflow runs to actually post
+    # With 5 runs/day this gives organic randomness
+    return random.random() < 0.30
 
 def main():
-    if not should_post_now():
-        print("Not a posting time, skipping.")
-        return
-    
     client = get_client()
-    pending = get_posts_to_publish()
-    
+    posts = load_posts()
+    pending = [p for p in posts if not p.get("published", False)]
+
     if not pending:
         print("No pending posts.")
         return
-    
+
+    if not should_post_today(posts):
+        print("Daily post limit reached.")
+        return
+
+    if not roll_post_chance():
+        print("Not posting this run (random skip).")
+        return
+
     post = pending[0]
-    
+
     try:
-        publish_post(client, post)
-        mark_as_published(post["id"])
-        print(f"Published post {post['id']}: {post['content'][:50]}...")
+        client.create_tweet(text=post["content"])
+        post["published"] = True
+        post["published_date"] = date.today().isoformat()
+        save_posts(posts)
+        print(f"Published: {post['content'][:60]}...")
     except Exception as e:
-        print(f"Error publishing: {e}")
+        print(f"Error: {e}")
 
 if __name__ == "__main__":
     main()
