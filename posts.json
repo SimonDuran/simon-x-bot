@@ -1,52 +1,315 @@
 [
-  {"id":1,"lang":"en","content":"sovereign bonds are genuinely underrated. most people skip straight to stocks and miss half the picture.","published":false},
-  {"id":2,"lang":"en","content":"started investing at 15. not because i had money — because i wanted to understand the game everyone else was playing without knowing the rules.","published":false},
-  {"id":3,"lang":"es","content":"hay algo satisfactorio en entender por qué se movió un mercado. no solo que se movió. el por qué.","published":false},
-  {"id":4,"lang":"ja","content":"自由って、たどり着く場所じゃなくて、毎日の生き方だと思う。","translation":"freedom isn't a place you arrive at. it's how you live every day.","published":false},
-  {"id":5,"lang":"en","content":"been deep into sovereign bullet bonds lately. studying how coupon rates interact with currency movements. everything in finance connects if you look close enough.","published":false},
-  {"id":6,"lang":"es","content":"la gente habla mucho de soñar. pocos hablan de lo que cuesta construir lo que sueñan.","published":false},
-  {"id":7,"lang":"en","content":"luffy doesn't want to be the strongest. he wants to be free. that's a completely different goal and most people never make that distinction in their own life.","published":false},
-  {"id":8,"lang":"ja","content":"夢は寝てる間に見るもの。目標は起きてる間に作るもの。","translation":"dreams are what you see while sleeping. goals are what you build while awake.","published":false},
-  {"id":9,"lang":"en","content":"ikigai changed how i think about purpose. not what you're good at or what pays — but what sits at the intersection of all four. most people never find it because they never look.","published":false},
-  {"id":10,"lang":"es","content":"llevo semanas analizando bonos soberanos bullet en ibkr. subestimado como activo. la mayoría ni sabe cómo funcionan los cupones.","published":false},
-  {"id":11,"lang":"en","content":"there's a version of discipline that stops feeling like discipline. it just becomes who you are. that's the goal.","published":false},
-  {"id":12,"lang":"ja","content":"知識は武器じゃない。知識は選択肢だ。","translation":"knowledge isn't a weapon. knowledge is options.","published":false},
-  {"id":13,"lang":"en","content":"the xiaomi su7 ultra exists and i think about it more than i should lol","published":false},
-  {"id":14,"lang":"es","content":"aprender finanzas a los 15 fue lo mejor que hice. no porque ya sea rico — sino porque entiendo el juego que la mayoría no entiende todavía.","published":false},
-  {"id":15,"lang":"en","content":"saitama trained until his hair fell out and still felt empty at the top. that's not a fitness story. that's a whole philosophy about what happens when the goal was never the real point.","published":false},
-  {"id":16,"lang":"ja","content":"僕はコロンビア出身の18歳。投資、アニメ、コーディングが好き。毎日少しずつ夢に近づいてる。","translation":"i'm 18 from colombia. into investing, anime and coding. every day i get a little closer to my dreams.","published":false},
-  {"id":17,"lang":"es","content":"santa marta tiene algo en las mañanas que te dan ganas de construir algo. no sé explicarlo mejor que eso.","published":false},
-  {"id":18,"lang":"en","content":"oshi no ko is not what you think going in. the whole thing is a meditation on what dreams actually cost. watch it.","published":false},
-  {"id":19,"lang":"es","content":"¿cuál es el activo financiero más subestimado según tú? genuinamente curioso.","published":false},
-  {"id":20,"lang":"en","content":"the goal isn't to be the loudest in the room. it's to be the one who understood it best.","published":false},
-  {"id":21,"lang":"ja","content":"頑張ることは大事。でも、なぜ頑張るかはもっと大事だ。","translation":"working hard matters. but knowing why you work hard matters more.","published":false},
-  {"id":22,"lang":"en","content":"i use claude, gemini and perplexity almost every day. each one thinks differently. learning to use all three well is its own skill honestly.","published":false},
-  {"id":23,"lang":"es","content":"el conocimiento no es poder. el conocimiento aplicado es poder. hay una diferencia enorme.","published":false},
-  {"id":24,"lang":"en","content":"lelouch built an entire revolution on the idea that the world is wrong and one person can change it. whether you agree or not — that kind of conviction is rare.","published":false},
-  {"id":25,"lang":"ja","content":"お金は目的じゃない。選択肢を増やすための道具だ。","translation":"money isn't the goal. it's a tool to expand your options.","published":false},
-  {"id":26,"lang":"en","content":"emerging markets in latam are genuinely interesting right now. not enough people are paying attention.","published":false},
-  {"id":27,"lang":"es","content":"cada día que trabajas sin que nadie te vea es un día que te separa de donde estabas. así funciona.","published":false},
-  {"id":28,"lang":"en","content":"mob psycho understands something most shonen don't — power without emotional maturity is useless. mob is the proof.","published":false},
-  {"id":29,"lang":"ja","content":"僕の夢は日本に行くこと。いつか必ず行く。そこで新しい友達もできたらいいな。","translation":"my dream is to go to japan. i'll get there someday for sure. would love to meet new people there too.","published":false},
-  {"id":30,"lang":"es","content":"el ikigai no es solo filosofía japonesa. es una pregunta práctica — ¿qué harías aunque no te pagaran? porque ahí está tu dirección.","published":false},
-  {"id":31,"lang":"en","content":"frieren lived for centuries and still didn't know how to say goodbye. sometimes the hardest thing isn't getting stronger — it's staying human.","published":false},
-  {"id":32,"lang":"ja","content":"世界中に友達を作りたい。言語は違っても、気持ちは伝わると思う。","translation":"i want to make friends all over the world. even if languages differ, i think feelings still come through.","published":false},
-  {"id":33,"lang":"en","content":"working out isn't just physical. it's the one hour where the only thing that matters is showing up. everything else is noise.","published":false},
-  {"id":34,"lang":"es","content":"¿qué libro te cambió la forma de pensar? genuinamente quiero saber.","published":false},
-  {"id":35,"lang":"en","content":"all might smiled through everything. not because things were fine — but because someone had to. that's a different kind of strength.","published":false},
-  {"id":36,"lang":"ja","content":"夢を追うのは怖い。でも、追わないのはもっと怖い。","translation":"chasing a dream is scary. but not chasing it is scarier.","published":false},
-  {"id":37,"lang":"en","content":"i'm 18, from santa marta colombia, investing since 15, building projects with ai, learning mandarin, and trying to see 40+ countries before 30. if any of that sounds like you too — let's talk.","published":false},
-  {"id":38,"lang":"en","content":"i do most of my serious work between claude, gemini and perplexity. each one has a different brain. knowing when to use which one is honestly underrated as a skill.","published":false},
-  {"id":39,"lang":"ja","content":"努力は必ず報われるとは限らない。でも、努力しない人には何も来ない。","translation":"hard work doesn't always pay off. but nothing comes to those who don't try.","published":false},
-  {"id":40,"lang":"en","content":"i want to travel to japan, china, and about 40 other places before i'm 30. the plan is being built daily.","published":false},
-  {"id":41,"lang":"es","content":"tengo 18 años, soy de santa marta, y llevo 3 años en el mercado de valores. no lo digo para impresionar. lo digo porque empezar temprano cambia todo.","published":false},
-  {"id":42,"lang":"en","content":"building a kalshi prediction market bot and learning how markets price uncertainty in real time. finance and coding in one project — doesn't get better than that.","published":false},
-  {"id":43,"lang":"ja","content":"コロンビアから世界を見ている。まだ小さいけど、夢は大きい。","translation":"watching the world from colombia. still small, but the dreams are big.","published":false},
-  {"id":44,"lang":"en","content":"code geass is a masterclass in how far one person's vision can carry — and how much it costs them. lelouch paid everything.","published":false},
-  {"id":45,"lang":"es","content":"a veces pienso que la mejor versión de uno mismo no es un destino. es simplemente lo que vas siendo cuando no te rindes.","published":false},
-  {"id":46,"lang":"en","content":"i do finance, coding and ai projects mostly on a macbook air. starting to feel the limits. what high performance laptop would you recommend for someone running models, backtests and multiple tools daily — mac or otherwise?","published":false},
-  {"id":47,"lang":"ja","content":"18歳でも、毎日学べば世界は変わる。僕はそう信じてる。","translation":"even at 18, if you learn every day the world changes. i truly believe that.","published":false},
-  {"id":48,"lang":"en","content":"happiness isn't something you reach. it's what happens when you're genuinely chasing something that matters to you. at least that's what i've figured out so far.","published":false},
-  {"id":49,"lang":"es","content":"meta para antes de los 25: japón, china, tener el su7 ultra, y haber construido algo que valga la pena. el reloj corre pero el plan también.","published":false},
-  {"id":50,"lang":"en","content":"if you're learning a third language or building something on your own at a young age — i genuinely want to hear about it. always looking for people doing interesting things.","published":false}
+  {
+    "id": 1,
+    "lang": "en",
+    "content": "sovereign bonds are genuinely underrated. most people skip straight to stocks and miss half the picture.",
+    "published": false
+  },
+  {
+    "id": 2,
+    "lang": "en",
+    "content": "started investing at 15. not because i had money \u2014 because i wanted to understand the game everyone else was playing without knowing the rules.",
+    "published": false
+  },
+  {
+    "id": 3,
+    "lang": "es",
+    "content": "hay algo satisfactorio en entender por qu\u00e9 se movi\u00f3 un mercado. no solo que se movi\u00f3. el por qu\u00e9.",
+    "published": false
+  },
+  {
+    "id": 4,
+    "lang": "ja",
+    "content": "\u81ea\u7531\u3063\u3066\u3001\u305f\u3069\u308a\u7740\u304f\u5834\u6240\u3058\u3083\u306a\u304f\u3066\u3001\u6bce\u65e5\u306e\u751f\u304d\u65b9\u3060\u3068\u601d\u3046\u3002",
+    "translation": "freedom isn't a place you arrive at. it's how you live every day.",
+    "published": false
+  },
+  {
+    "id": 5,
+    "lang": "en",
+    "content": "been deep into sovereign bullet bonds lately. studying how coupon rates interact with currency movements. everything in finance connects if you look close enough.",
+    "published": false
+  },
+  {
+    "id": 6,
+    "lang": "es",
+    "content": "la gente habla mucho de so\u00f1ar. pocos hablan de lo que cuesta construir lo que sue\u00f1an.",
+    "published": false
+  },
+  {
+    "id": 7,
+    "lang": "en",
+    "content": "luffy doesn't want to be the strongest. he wants to be free. that's a completely different goal and most people never make that distinction in their own life.",
+    "published": false
+  },
+  {
+    "id": 8,
+    "lang": "ja",
+    "content": "\u5922\u306f\u5bdd\u3066\u308b\u9593\u306b\u898b\u308b\u3082\u306e\u3002\u76ee\u6a19\u306f\u8d77\u304d\u3066\u308b\u9593\u306b\u4f5c\u308b\u3082\u306e\u3002",
+    "translation": "dreams are what you see while sleeping. goals are what you build while awake.",
+    "published": false
+  },
+  {
+    "id": 9,
+    "lang": "en",
+    "content": "ikigai changed how i think about purpose. not what you're good at or what pays \u2014 but what sits at the intersection of all four. most people never find it because they never look.",
+    "published": false
+  },
+  {
+    "id": 10,
+    "lang": "es",
+    "content": "llevo semanas analizando bonos soberanos bullet en ibkr. subestimado como activo. la mayor\u00eda ni sabe c\u00f3mo funcionan los cupones.",
+    "published": false
+  },
+  {
+    "id": 11,
+    "lang": "en",
+    "content": "there's a version of discipline that stops feeling like discipline. it just becomes who you are. that's the goal.",
+    "published": false
+  },
+  {
+    "id": 12,
+    "lang": "ja",
+    "content": "\u77e5\u8b58\u306f\u6b66\u5668\u3058\u3083\u306a\u3044\u3002\u77e5\u8b58\u306f\u9078\u629e\u80a2\u3060\u3002",
+    "translation": "knowledge isn't a weapon. knowledge is options.",
+    "published": false
+  },
+  {
+    "id": 13,
+    "lang": "en",
+    "content": "the xiaomi su7 ultra exists and i think about it more than i should lol",
+    "published": false
+  },
+  {
+    "id": 14,
+    "lang": "es",
+    "content": "aprender finanzas a los 15 fue lo mejor que hice. no porque ya sea rico \u2014 sino porque entiendo el juego que la mayor\u00eda no entiende todav\u00eda.",
+    "published": false
+  },
+  {
+    "id": 15,
+    "lang": "en",
+    "content": "saitama trained until his hair fell out and still felt empty at the top. that's not a fitness story. that's a whole philosophy about what happens when the goal was never the real point.",
+    "published": false
+  },
+  {
+    "id": 16,
+    "lang": "ja",
+    "content": "\u50d5\u306f\u30b3\u30ed\u30f3\u30d3\u30a2\u51fa\u8eab\u306e18\u6b73\u3002\u6295\u8cc7\u3001\u30a2\u30cb\u30e1\u3001\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u304c\u597d\u304d\u3002\u6bce\u65e5\u5c11\u3057\u305a\u3064\u5922\u306b\u8fd1\u3065\u3044\u3066\u308b\u3002",
+    "translation": "i'm 18 from colombia. into investing, anime and coding. every day i get a little closer to my dreams.",
+    "published": false
+  },
+  {
+    "id": 17,
+    "lang": "es",
+    "content": "santa marta tiene algo en las ma\u00f1anas que te dan ganas de construir algo. no s\u00e9 explicarlo mejor que eso.",
+    "published": false
+  },
+  {
+    "id": 18,
+    "lang": "en",
+    "content": "oshi no ko is not what you think going in. the whole thing is a meditation on what dreams actually cost. watch it.",
+    "published": false
+  },
+  {
+    "id": 19,
+    "lang": "es",
+    "content": "\u00bfcu\u00e1l es el activo financiero m\u00e1s subestimado seg\u00fan t\u00fa? genuinamente curioso.",
+    "published": false
+  },
+  {
+    "id": 20,
+    "lang": "en",
+    "content": "the goal isn't to be the loudest in the room. it's to be the one who understood it best.",
+    "published": false
+  },
+  {
+    "id": 21,
+    "lang": "ja",
+    "content": "\u9811\u5f35\u308b\u3053\u3068\u306f\u5927\u4e8b\u3002\u3067\u3082\u3001\u306a\u305c\u9811\u5f35\u308b\u304b\u306f\u3082\u3063\u3068\u5927\u4e8b\u3060\u3002",
+    "translation": "working hard matters. but knowing why you work hard matters more.",
+    "published": false
+  },
+  {
+    "id": 22,
+    "lang": "en",
+    "content": "i use claude, gemini and perplexity almost every day. each one thinks differently. learning to use all three well is its own skill honestly.",
+    "published": false
+  },
+  {
+    "id": 23,
+    "lang": "es",
+    "content": "el conocimiento no es poder. el conocimiento aplicado es poder. hay una diferencia enorme.",
+    "published": false
+  },
+  {
+    "id": 24,
+    "lang": "en",
+    "content": "lelouch built an entire revolution on the idea that the world is wrong and one person can change it. whether you agree or not \u2014 that kind of conviction is rare.",
+    "published": false
+  },
+  {
+    "id": 25,
+    "lang": "ja",
+    "content": "\u304a\u91d1\u306f\u76ee\u7684\u3058\u3083\u306a\u3044\u3002\u9078\u629e\u80a2\u3092\u5897\u3084\u3059\u305f\u3081\u306e\u9053\u5177\u3060\u3002",
+    "translation": "money isn't the goal. it's a tool to expand your options.",
+    "published": false
+  },
+  {
+    "id": 26,
+    "lang": "en",
+    "content": "emerging markets in latam are genuinely interesting right now. not enough people are paying attention.",
+    "published": false
+  },
+  {
+    "id": 27,
+    "lang": "es",
+    "content": "cada d\u00eda que trabajas sin que nadie te vea es un d\u00eda que te separa de donde estabas. as\u00ed funciona.",
+    "published": false
+  },
+  {
+    "id": 28,
+    "lang": "en",
+    "content": "mob psycho understands something most shonen don't \u2014 power without emotional maturity is useless. mob is the proof.",
+    "published": false
+  },
+  {
+    "id": 29,
+    "lang": "ja",
+    "content": "\u50d5\u306e\u5922\u306f\u65e5\u672c\u306b\u884c\u304f\u3053\u3068\u3002\u3044\u3064\u304b\u5fc5\u305a\u884c\u304f\u3002\u305d\u3053\u3067\u65b0\u3057\u3044\u53cb\u9054\u3082\u3067\u304d\u305f\u3089\u3044\u3044\u306a\u3002",
+    "translation": "my dream is to go to japan. i'll get there someday for sure. would love to meet new people there too.",
+    "published": false
+  },
+  {
+    "id": 30,
+    "lang": "es",
+    "content": "el ikigai no es solo filosof\u00eda japonesa. es una pregunta pr\u00e1ctica \u2014 \u00bfqu\u00e9 har\u00edas aunque no te pagaran? porque ah\u00ed est\u00e1 tu direcci\u00f3n.",
+    "published": false
+  },
+  {
+    "id": 31,
+    "lang": "en",
+    "content": "frieren lived for centuries and still didn't know how to say goodbye. sometimes the hardest thing isn't getting stronger \u2014 it's staying human.",
+    "published": false
+  },
+  {
+    "id": 32,
+    "lang": "ja",
+    "content": "\u4e16\u754c\u4e2d\u306b\u53cb\u9054\u3092\u4f5c\u308a\u305f\u3044\u3002\u8a00\u8a9e\u306f\u9055\u3063\u3066\u3082\u3001\u6c17\u6301\u3061\u306f\u4f1d\u308f\u308b\u3068\u601d\u3046\u3002",
+    "translation": "i want to make friends all over the world. even if languages differ, i think feelings still come through.",
+    "published": false
+  },
+  {
+    "id": 33,
+    "lang": "en",
+    "content": "working out isn't just physical. it's the one hour where the only thing that matters is showing up. everything else is noise.",
+    "published": false
+  },
+  {
+    "id": 34,
+    "lang": "es",
+    "content": "\u00bfqu\u00e9 libro te cambi\u00f3 la forma de pensar? genuinamente quiero saber.",
+    "published": false
+  },
+  {
+    "id": 35,
+    "lang": "en",
+    "content": "all might smiled through everything. not because things were fine \u2014 but because someone had to. that's a different kind of strength.",
+    "published": false
+  },
+  {
+    "id": 36,
+    "lang": "ja",
+    "content": "\u5922\u3092\u8ffd\u3046\u306e\u306f\u6016\u3044\u3002\u3067\u3082\u3001\u8ffd\u308f\u306a\u3044\u306e\u306f\u3082\u3063\u3068\u6016\u3044\u3002",
+    "translation": "chasing a dream is scary. but not chasing it is scarier.",
+    "published": true,
+    "published_date": "2026-04-01"
+  },
+  {
+    "id": 37,
+    "lang": "en",
+    "content": "i'm 18, from santa marta colombia, investing since 15, building projects with ai, learning mandarin, and trying to see 40+ countries before 30. if any of that sounds like you too \u2014 let's talk.",
+    "published": false
+  },
+  {
+    "id": 38,
+    "lang": "en",
+    "content": "i do most of my serious work between claude, gemini and perplexity. each one has a different brain. knowing when to use which one is honestly underrated as a skill.",
+    "published": false
+  },
+  {
+    "id": 39,
+    "lang": "ja",
+    "content": "\u52aa\u529b\u306f\u5fc5\u305a\u5831\u308f\u308c\u308b\u3068\u306f\u9650\u3089\u306a\u3044\u3002\u3067\u3082\u3001\u52aa\u529b\u3057\u306a\u3044\u4eba\u306b\u306f\u4f55\u3082\u6765\u306a\u3044\u3002",
+    "translation": "hard work doesn't always pay off. but nothing comes to those who don't try.",
+    "published": false
+  },
+  {
+    "id": 40,
+    "lang": "en",
+    "content": "i want to travel to japan, china, and about 40 other places before i'm 30. the plan is being built daily.",
+    "published": false
+  },
+  {
+    "id": 41,
+    "lang": "es",
+    "content": "tengo 18 a\u00f1os, soy de santa marta, y llevo 3 a\u00f1os en el mercado de valores. no lo digo para impresionar. lo digo porque empezar temprano cambia todo.",
+    "published": false
+  },
+  {
+    "id": 42,
+    "lang": "en",
+    "content": "building a kalshi prediction market bot and learning how markets price uncertainty in real time. finance and coding in one project \u2014 doesn't get better than that.",
+    "published": false
+  },
+  {
+    "id": 43,
+    "lang": "ja",
+    "content": "\u30b3\u30ed\u30f3\u30d3\u30a2\u304b\u3089\u4e16\u754c\u3092\u898b\u3066\u3044\u308b\u3002\u307e\u3060\u5c0f\u3055\u3044\u3051\u3069\u3001\u5922\u306f\u5927\u304d\u3044\u3002",
+    "translation": "watching the world from colombia. still small, but the dreams are big.",
+    "published": false
+  },
+  {
+    "id": 44,
+    "lang": "en",
+    "content": "code geass is a masterclass in how far one person's vision can carry \u2014 and how much it costs them. lelouch paid everything.",
+    "published": false
+  },
+  {
+    "id": 45,
+    "lang": "es",
+    "content": "a veces pienso que la mejor versi\u00f3n de uno mismo no es un destino. es simplemente lo que vas siendo cuando no te rindes.",
+    "published": false
+  },
+  {
+    "id": 46,
+    "lang": "en",
+    "content": "i do finance, coding and ai projects mostly on a macbook air. starting to feel the limits. what high performance laptop would you recommend for someone running models, backtests and multiple tools daily \u2014 mac or otherwise?",
+    "published": false
+  },
+  {
+    "id": 47,
+    "lang": "ja",
+    "content": "18\u6b73\u3067\u3082\u3001\u6bce\u65e5\u5b66\u3079\u3070\u4e16\u754c\u306f\u5909\u308f\u308b\u3002\u50d5\u306f\u305d\u3046\u4fe1\u3058\u3066\u308b\u3002",
+    "translation": "even at 18, if you learn every day the world changes. i truly believe that.",
+    "published": false
+  },
+  {
+    "id": 48,
+    "lang": "en",
+    "content": "happiness isn't something you reach. it's what happens when you're genuinely chasing something that matters to you. at least that's what i've figured out so far.",
+    "published": false
+  },
+  {
+    "id": 49,
+    "lang": "es",
+    "content": "meta para antes de los 25: jap\u00f3n, china, tener el su7 ultra, y haber construido algo que valga la pena. el reloj corre pero el plan tambi\u00e9n.",
+    "published": false
+  },
+  {
+    "id": 50,
+    "lang": "en",
+    "content": "if you're learning a third language or building something on your own at a young age \u2014 i genuinely want to hear about it. always looking for people doing interesting things.",
+    "published": false
+  }
 ]
