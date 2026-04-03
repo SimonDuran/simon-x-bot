@@ -49,7 +49,8 @@
     "lang": "ja",
     "content": "\u5922\u306f\u5bdd\u3066\u308b\u9593\u306b\u898b\u308b\u3082\u306e\u3002\u76ee\u6a19\u306f\u8d77\u304d\u3066\u308b\u9593\u306b\u4f5c\u308b\u3082\u306e\u3002",
     "translation": "dreams are what you see while sleeping. goals are what you build while awake.",
-    "published": false
+    "published": true,
+    "published_date": "2026-04-03"
   },
   {
     "id": 9,
