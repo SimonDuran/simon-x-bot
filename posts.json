@@ -150,7 +150,8 @@
     "id": 24,
     "lang": "en",
     "content": "lelouch built an entire revolution on the idea that the world is wrong and one person can change it. whether you agree or not \u2014 that kind of conviction is rare.",
-    "published": false
+    "published": true,
+    "published_date": "2026-04-03"
   },
   {
     "id": 25,
