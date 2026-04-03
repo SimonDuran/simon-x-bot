@@ -267,7 +267,8 @@
     "id": 42,
     "lang": "en",
     "content": "building a kalshi prediction market bot and learning how markets price uncertainty in real time. finance and coding in one project \u2014 doesn't get better than that.",
-    "published": false
+    "published": true,
+    "published_date": "2026-04-03"
   },
   {
     "id": 43,
