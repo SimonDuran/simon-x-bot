@@ -213,7 +213,8 @@
     "id": 34,
     "lang": "es",
     "content": "\u00bfqu\u00e9 libro te cambi\u00f3 la forma de pensar? genuinamente quiero saber.",
-    "published": false
+    "published": true,
+    "published_date": "2026-04-03"
   },
   {
     "id": 35,
