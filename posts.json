@@ -147,7 +147,8 @@
     "id": 23,
     "lang": "es",
     "content": "el conocimiento no es poder. el conocimiento aplicado es poder. hay una diferencia enorme.",
-    "published": false
+    "published": true,
+    "published_date": "2026-04-04"
   },
   {
     "id": 24,
