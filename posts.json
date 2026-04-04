@@ -297,7 +297,8 @@
     "id": 46,
     "lang": "en",
     "content": "i do finance, coding and ai projects mostly on a macbook air. starting to feel the limits. what high performance laptop would you recommend for someone running models, backtests and multiple tools daily \u2014 mac or otherwise?",
-    "published": false
+    "published": true,
+    "published_date": "2026-04-04"
   },
   {
     "id": 47,
