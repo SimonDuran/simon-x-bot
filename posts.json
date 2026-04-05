@@ -56,7 +56,8 @@
     "id": 9,
     "lang": "en",
     "content": "ikigai changed how i think about purpose. not what you're good at or what pays \u2014 but what sits at the intersection of all four. most people never find it because they never look.",
-    "published": false
+    "published": true,
+    "published_date": "2026-04-05"
   },
   {
     "id": 10,
