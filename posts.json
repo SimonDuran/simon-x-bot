@@ -141,7 +141,8 @@
     "id": 22,
     "lang": "en",
     "content": "i use claude, gemini and perplexity almost every day. each one thinks differently. learning to use all three well is its own skill honestly.",
-    "published": false
+    "published": true,
+    "published_date": "2026-04-05"
   },
   {
     "id": 23,
