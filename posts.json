@@ -129,7 +129,8 @@
     "id": 20,
     "lang": "en",
     "content": "the goal isn't to be the loudest in the room. it's to be the one who understood it best.",
-    "published": false
+    "published": true,
+    "published_date": "2026-04-06"
   },
   {
     "id": 21,
