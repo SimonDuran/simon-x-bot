@@ -110,7 +110,8 @@
     "id": 17,
     "lang": "es",
     "content": "santa marta tiene algo en las ma\u00f1anas que te dan ganas de construir algo. no s\u00e9 explicarlo mejor que eso.",
-    "published": false
+    "published": true,
+    "published_date": "2026-04-06"
   },
   {
     "id": 18,
