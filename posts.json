@@ -222,7 +222,8 @@
     "id": 33,
     "lang": "en",
     "content": "working out isn't just physical. it's the one hour where the only thing that matters is showing up. everything else is noise.",
-    "published": false
+    "published": true,
+    "published_date": "2026-04-08"
   },
   {
     "id": 34,
