@@ -202,7 +202,8 @@
     "id": 30,
     "lang": "es",
     "content": "el ikigai no es solo filosof\u00eda japonesa. es una pregunta pr\u00e1ctica \u2014 \u00bfqu\u00e9 har\u00edas aunque no te pagaran? porque ah\u00ed est\u00e1 tu direcci\u00f3n.",
-    "published": false
+    "published": true,
+    "published_date": "2026-04-09"
   },
   {
     "id": 31,
